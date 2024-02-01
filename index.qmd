@@ -1,5 +1,5 @@
 ---
-title: "maszdev.github.io"
+title: "Just cool stuff done after work"
 listing:
   contents: posts
   sort: "date desc"
