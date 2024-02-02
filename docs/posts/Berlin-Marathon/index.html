@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2024-01-25">
+<meta name="author" content="Marcin Szwebs">
+<meta name="dcterms.date" content="2024-02-02">
 
-<title>Marcin Szwebs - Welcome To My Blog</title>
+<title>Marcin Szwebs - Berlin Marathon</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,9 +108,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
+      <h1 class="title">Berlin Marathon</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+                <div class="quarto-category">sport</div>
+                <div class="quarto-category">human-activity</div>
+                <div class="quarto-category">analysis</div>
               </div>
                   </div>
   </div>
@@ -121,14 +123,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Tristan O’Malley </p>
+               <p>Marcin Szwebs </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 25, 2024</p>
+        <p class="date">February 2, 2024</p>
       </div>
     </div>
     
@@ -146,11 +148,26 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<p>Road running is a democratic event. The same Run can be attended by a Olimpic champion, a (not so) successful professional, an amateur for whom running is a passion, or someone who finds time for two trainings a week. This diversity results in a wide range of achieved finish times and is visible especially during the longest runs - Marathons. One can see a common patterns, I will show it with analysis of results for one of the largest marathons - Berlin 2018 (about 28,000 times achieved by men).</p>
+<section id="lets-visualize-it" class="level2">
+<h2 class="anchored" data-anchor-id="lets-visualize-it">Lets visualize it</h2>
+<p>There is a histogram below. The X axis shows the range of all achieved results divided into one minute bins. The height of the bar (along the Y axis) means the number of people who finished the run with the time within a particular minute (without taking into account the seconds) - i.e.&nbsp;the most people (about 370 runners) completed the marathon with results in the range of 3:58:00 - 3: 58:59</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="BerlinHistogram_ENG.PNG" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Histogram for marathon results</figcaption>
+</figure>
+</div>
+<p>On the left side of chart one can see Eliud Kipchoge, he broke the world record then - 02:01:39. The slowest runners are on the right side (at least those who managed to reach the finish line :-)). One technical note here: with many thousands of runners, it is not possible for all of them to start at the same time. Some are closer to the Start, others are further. Additionally, the runners are grouped into zones (depending on the declared time they are able to achieve), which are “released” every few minutes (so that faster runners do not have to run through the crowd of slower ones). This is not a problem for data scientist because time of the individual runner is not started at gun shot. All runners have the chip in their bib number and their individual time is counted between crossing the Start and Meta lines.</p>
+</section>
+<section id="and-now-the-good-story" class="level2">
+<h2 class="anchored" data-anchor-id="and-now-the-good-story">And now the good story</h2>
+<p>Every beginner just wants to finish the run. If he already finished few runs, and prepared himself well, he thinks about “breaking 4h”. This border is nicely marked on the chart, many participants of the run finish it with the time just below 4 hours. Behind this border you can see a significant decrease of runners. Everyone who is able to run 42 km in <sub>about</sub> 4h will distribute his/her power and will do their best in the last kilometers to run below 4 hours, not a few seconds after that time. There is also additional help, one can follow pacemekers - runners engaged by the organizers of the run. They are running with small balloons with information about the time they will finish the run. Some of them have balloons with “4:00”. Piece of cake, just run close to them ;-)</p>
+<p>The (really) strong amateurs are trying to break 3h30 ’(the local maximum on the chart). If you break 3h (next local maximum) it means, your life after work is a Project. Trainings, their types, body monitoring, diet, rest.</p>
+<p>There is also the right side of the chart. The whole chart doesn’t look like Gaussian distribution. The results are not drawn by dice :-) . If we were to persuade 100 additional marathon runners to participate in such run, it would turn out that few would be able to cross the 3h limit. Getting close to a high record is extremely difficult, but there is a lot of space on the right side of the chart :-). Many runners consider 5h or just finishing the run as a life challenge (which is also a challenge, because the organizers close the route after 8 hours and traffic road is restored).</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
